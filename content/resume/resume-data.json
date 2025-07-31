@@ -1,0 +1,187 @@
+{
+  "personalInfo": {
+    "name": "Alex Johnson",
+    "title": "Senior Full-Stack Software Engineer",
+    "email": "alex.johnson@email.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "San Francisco, CA",
+    "linkedin": "https://linkedin.com/in/alexjohnson",
+    "github": "https://github.com/alexjohnson",
+    "website": "https://alexjohnson.dev",
+    "summary": "Passionate full-stack software engineer with 6+ years of experience building scalable web applications and leading cross-functional teams. Expertise in React, Node.js, and cloud technologies with a strong focus on user experience and system performance."
+  },
+  "workExperience": [
+    {
+      "id": "exp-1",
+      "company": "TechCorp Solutions",
+      "position": "Senior Full-Stack Engineer",
+      "startDate": "2022-03",
+      "endDate": null,
+      "current": true,
+      "companyDescription": "Leading fintech company providing payment solutions for e-commerce platforms",
+      "achievements": [
+        "Led development of a microservices architecture that improved system scalability by 300%",
+        "Mentored 3 junior developers and established code review best practices",
+        "Implemented automated testing pipeline reducing deployment bugs by 85%",
+        "Architected real-time payment processing system handling 10K+ transactions per minute"
+      ],
+      "technologies": ["React", "TypeScript", "Node.js", "PostgreSQL", "AWS", "Docker", "Kubernetes"]
+    },
+    {
+      "id": "exp-2",
+      "company": "Digital Innovations Inc",
+      "position": "Full-Stack Developer",
+      "startDate": "2020-01",
+      "endDate": "2022-02",
+      "current": false,
+      "companyDescription": "Software consultancy building custom web applications for enterprise clients",
+      "achievements": [
+        "Built responsive web applications serving 100K+ daily active users",
+        "Optimized application performance resulting in 40% faster load times",
+        "Collaborated with UX team to implement accessibility standards (WCAG 2.1 AA)",
+        "Developed RESTful APIs and GraphQL endpoints for mobile app integration"
+      ],
+      "technologies": ["React", "JavaScript", "Python", "Django", "MySQL", "Redis", "GCP"]
+    },
+    {
+      "id": "exp-3",
+      "company": "StartupTech",
+      "position": "Frontend Developer",
+      "startDate": "2018-06",
+      "endDate": "2019-12",
+      "current": false,
+      "companyDescription": "Early-stage startup focused on AI-powered content management solutions",
+      "achievements": [
+        "Developed the company's first web application from scratch using React",
+        "Implemented responsive design supporting all major browsers and devices",
+        "Created reusable component library reducing development time by 30%",
+        "Collaborated closely with design team to ensure pixel-perfect implementations"
+      ],
+      "technologies": ["React", "JavaScript", "CSS3", "HTML5", "Node.js", "MongoDB"]
+    }
+  ],
+  "skills": [
+    {
+      "name": "React",
+      "category": "Frontend",
+      "level": 5,
+      "yearsOfExperience": 6
+    },
+    {
+      "name": "TypeScript",
+      "category": "Frontend",
+      "level": 5,
+      "yearsOfExperience": 4
+    },
+    {
+      "name": "Next.js",
+      "category": "Frontend",
+      "level": 4,
+      "yearsOfExperience": 3
+    },
+    {
+      "name": "Node.js",
+      "category": "Backend",
+      "level": 5,
+      "yearsOfExperience": 5
+    },
+    {
+      "name": "Python",
+      "category": "Backend",
+      "level": 4,
+      "yearsOfExperience": 3
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "Database",
+      "level": 4,
+      "yearsOfExperience": 4
+    },
+    {
+      "name": "MongoDB",
+      "category": "Database",
+      "level": 4,
+      "yearsOfExperience": 3
+    },
+    {
+      "name": "AWS",
+      "category": "Cloud",
+      "level": 4,
+      "yearsOfExperience": 3
+    },
+    {
+      "name": "Docker",
+      "category": "DevOps",
+      "level": 4,
+      "yearsOfExperience": 3
+    },
+    {
+      "name": "Kubernetes",
+      "category": "DevOps",
+      "level": 3,
+      "yearsOfExperience": 2
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "institution": "University of California, Berkeley",
+      "degree": "Bachelor of Science",
+      "fieldOfStudy": "Computer Science",
+      "graduationDate": "2018-05",
+      "gpa": "3.7",
+      "achievements": [
+        "Dean's List for 4 consecutive semesters",
+        "President of Computer Science Student Association",
+        "Outstanding Senior Project Award"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "name": "TaskFlow - Project Management Platform",
+      "description": "A comprehensive project management platform with real-time collaboration features, built for small to medium teams.",
+      "technologies": ["React", "TypeScript", "Node.js", "PostgreSQL", "Socket.io", "AWS"],
+      "url": "https://taskflow-demo.com",
+      "githubUrl": "https://github.com/alexjohnson/taskflow",
+      "completionDate": "2023-12",
+      "highlights": [
+        "Real-time collaboration with WebSocket integration",
+        "Advanced filtering and search functionality",
+        "Responsive design supporting all devices",
+        "Automated backup and data recovery system"
+      ]
+    },
+    {
+      "id": "proj-2",
+      "name": "WeatherWise - Weather Analytics Dashboard",
+      "description": "An interactive weather analytics dashboard providing detailed forecasts and historical data visualization.",
+      "technologies": ["Next.js", "TypeScript", "D3.js", "Express", "MongoDB"],
+      "url": "https://weatherwise-demo.com",
+      "githubUrl": "https://github.com/alexjohnson/weatherwise",
+      "completionDate": "2023-08",
+      "highlights": [
+        "Interactive charts and data visualizations",
+        "Integration with multiple weather APIs",
+        "Location-based forecasting",
+        "Historical weather data analysis"
+      ]
+    },
+    {
+      "id": "proj-3",
+      "name": "EcoTracker - Carbon Footprint Calculator",
+      "description": "A mobile-responsive web app helping users track and reduce their carbon footprint through daily activities.",
+      "technologies": ["React", "JavaScript", "Firebase", "Chart.js"],
+      "githubUrl": "https://github.com/alexjohnson/ecotracker",
+      "completionDate": "2022-10",
+      "highlights": [
+        "Gamification features to encourage sustainable habits",
+        "Social sharing and community challenges",
+        "Detailed analytics and progress tracking",
+        "Integration with transportation and energy APIs"
+      ]
+    }
+  ],
+  "lastUpdated": "2025-01-31T10:00:00Z"
+}

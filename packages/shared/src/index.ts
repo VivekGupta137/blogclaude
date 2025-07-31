@@ -114,3 +114,127 @@ export const BlogCategory = {
 } as const;
 
 export type BlogCategoryType = typeof BlogCategory[keyof typeof BlogCategory];
+
+/**
+ * Represents personal information section of a resume
+ */
+export interface PersonalInfo {
+  /** Full name */
+  name: string;
+  /** Professional title/role */
+  title: string;
+  /** Professional email address */
+  email: string;
+  /** Phone number */
+  phone: string;
+  /** Physical location */
+  location: string;
+  /** LinkedIn profile URL */
+  linkedin?: string;
+  /** GitHub profile URL */
+  github?: string;
+  /** Personal website URL */
+  website?: string;
+  /** Professional summary/bio */
+  summary: string;
+}
+
+/**
+ * Represents a work experience entry
+ */
+export interface WorkExperience {
+  /** Unique identifier for the experience */
+  id: string;
+  /** Company name */
+  company: string;
+  /** Job title/position */
+  position: string;
+  /** Employment start date in YYYY-MM format */
+  startDate: string;
+  /** Employment end date in YYYY-MM format, or null if current */
+  endDate: string | null;
+  /** Whether this is current employment */
+  current: boolean;
+  /** Brief company description */
+  companyDescription: string;
+  /** List of key achievements and responsibilities */
+  achievements: string[];
+  /** Technologies used in this role */
+  technologies: string[];
+  /** Optional company logo URL */
+  companyLogo?: string;
+}
+
+/**
+ * Represents a technical skill with proficiency level
+ */
+export interface Skill {
+  /** Skill name */
+  name: string;
+  /** Skill category (e.g., 'Frontend', 'Backend', 'Database') */
+  category: string;
+  /** Proficiency level from 1-5 */
+  level: 1 | 2 | 3 | 4 | 5;
+  /** Years of experience with this skill */
+  yearsOfExperience: number;
+}
+
+/**
+ * Represents an education entry
+ */
+export interface Education {
+  /** Unique identifier for the education entry */
+  id: string;
+  /** Institution name */
+  institution: string;
+  /** Degree title */
+  degree: string;
+  /** Field of study */
+  fieldOfStudy: string;
+  /** Graduation date in YYYY-MM format */
+  graduationDate: string;
+  /** GPA if applicable */
+  gpa?: string;
+  /** Notable achievements or honors */
+  achievements?: string[];
+}
+
+/**
+ * Represents a project entry
+ */
+export interface Project {
+  /** Unique identifier for the project */
+  id: string;
+  /** Project name */
+  name: string;
+  /** Brief project description */
+  description: string;
+  /** Technologies used */
+  technologies: string[];
+  /** Project URL if available */
+  url?: string;
+  /** GitHub repository URL if available */
+  githubUrl?: string;
+  /** Project completion date in YYYY-MM format */
+  completionDate: string;
+  /** Key features or achievements */
+  highlights: string[];
+}
+
+/**
+ * Complete resume data structure
+ */
+export interface Resume {
+  /** Personal information */
+  personalInfo: PersonalInfo;
+  /** Work experience entries */
+  workExperience: WorkExperience[];
+  /** Technical skills */
+  skills: Skill[];
+  /** Education entries */
+  education: Education[];
+  /** Project entries */
+  projects: Project[];
+  /** Last updated timestamp */
+  lastUpdated: string;
+}

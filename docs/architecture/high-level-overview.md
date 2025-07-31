@@ -1,0 +1,4 @@
+# High Level Overview
+
+The system will adopt a **Jamstack architectural style**, focusing on pre-rendering content at build time for blazing speed and enhanced SEO, with dynamic functionality provided through API calls to external services. The application will be served as static assets from a Content Delivery Network (CDN). A **monorepo repository structure** will be employed, housing both the frontend application code and potentially shared TypeScript types or utility functions for future backend components (e.g., a custom API for comments or newsletter). This allows for streamlined development and consistent tooling across potentially interconnected parts of the project. User interaction will flow from the client-side, interacting with embedded third-party services for comments and analytics, and consuming pre-rendered blog content. Blog content will be managed as **Markdown files within the repository**, processed by a Static Site Generator.
+

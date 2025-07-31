@@ -1,0 +1,5 @@
+.next
+apps/web/.next
+.claude
+.bmad-core
+node_modules

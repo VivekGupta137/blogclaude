@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
-import { getBlogPosts } from '@/lib/blog-utils';
-import BlogPostCard from '@/components/BlogPostCard';
+import { getBlogPosts, getUniqueCategories, getUniqueTags } from '@/lib/blog-utils';
+import { BlogListWithFilters } from '@/components/BlogListWithFilters';
 
 export const metadata: Metadata = {
   title: 'Blog | BlogClaude',
@@ -14,14 +14,21 @@ export const metadata: Metadata = {
 };
 
 export default async function BlogPage() {
-  // Fetch posts with proper error handling
+  // Fetch posts and filter data with proper error handling
   let posts: Awaited<ReturnType<typeof getBlogPosts>> = [];
+  let categories: string[] = [];
+  let tags: string[] = [];
   let hasError = false;
 
   try {
-    posts = await getBlogPosts();
+    // Fetch all data in parallel for better performance
+    [posts, categories, tags] = await Promise.all([
+      getBlogPosts(),
+      getUniqueCategories(),
+      getUniqueTags(),
+    ]);
   } catch (error) {
-    console.error('Failed to load blog posts:', error);
+    console.error('Failed to load blog data:', error);
     hasError = true;
   }
 
@@ -57,16 +64,11 @@ export default async function BlogPage() {
             </p>
           </div>
         ) : (
-          <>
-            <div className="mb-6 text-sm text-gray-500">
-              Showing {posts.length} post{posts.length !== 1 ? 's' : ''}
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {posts.map((post) => (
-                <BlogPostCard key={post.id} post={post} />
-              ))}
-            </div>
-          </>
+          <BlogListWithFilters
+            initialPosts={posts}
+            categories={categories}
+            tags={tags}
+          />
         )}
       </main>
     </div>

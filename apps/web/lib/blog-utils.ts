@@ -132,3 +132,52 @@ export async function getAllBlogSlugs(): Promise<string[]> {
     return [];
   }
 }
+
+/**
+ * Get all unique categories from blog posts
+ * Used for building category filter UI
+ */
+export async function getUniqueCategories(): Promise<string[]> {
+  try {
+    const posts = await getBlogPosts();
+    const categories = posts.map(post => post.category);
+    return [...new Set(categories)].filter(Boolean).sort();
+  } catch (error) {
+    console.error('Error getting unique categories:', error);
+    return [];
+  }
+}
+
+/**
+ * Get all unique tags from blog posts
+ * Used for building tag filter UI
+ */
+export async function getUniqueTags(): Promise<string[]> {
+  try {
+    const posts = await getBlogPosts();
+    const allTags = posts.flatMap(post => post.tags);
+    return [...new Set(allTags)].filter(Boolean).sort();
+  } catch (error) {
+    console.error('Error getting unique tags:', error);
+    return [];
+  }
+}
+
+
+/**
+ * Filter blog posts by category and/or tags
+ * Used for implementing filtering functionality
+ */
+export async function getFilteredBlogPosts(
+  category?: string,
+  tags?: string[]
+): Promise<BlogPost[]> {
+  try {
+    const posts = await getBlogPosts();
+    const { filterBlogPosts } = await import('./blog-client-utils');
+    return filterBlogPosts(posts, category, tags);
+  } catch (error) {
+    console.error('Error filtering blog posts:', error);
+    return [];
+  }
+}

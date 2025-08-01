@@ -1,0 +1,20 @@
+{
+  "bio": "I'm a passionate software engineer with a deep love for creating efficient, scalable, and user-friendly applications. With years of experience in full-stack development, I specialize in modern web technologies including React, TypeScript, and Node.js. My journey in software development has taken me through various domains, from building enterprise applications to crafting delightful user experiences.\n\nWhen I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through technical writing. I believe in the power of clean code, thoughtful architecture, and continuous learning. My goal is to bridge the gap between complex technical concepts and practical, real-world solutions.",
+  "photoUrl": "/images/professional-photo.jpg",
+  "tagline": "Full-Stack Developer & Technical Writer",
+  "additionalSections": [
+    {
+      "id": "philosophy",
+      "title": "My Development Philosophy",
+      "content": "I believe that great software is built on three pillars: clarity, maintainability, and user-centricity. Every line of code should serve a purpose, every architecture decision should be justified, and every feature should solve a real problem for real people.",
+      "order": 1
+    },
+    {
+      "id": "interests",
+      "title": "Beyond Code",
+      "content": "Outside of software development, I'm passionate about technology trends, system design patterns, and the intersection of technology and human behavior. I enjoy mentoring junior developers and participating in tech communities where knowledge sharing drives innovation.",
+      "order": 2
+    }
+  ],
+  "lastUpdated": "2025-08-01T00:00:00Z"
+}

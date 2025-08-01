@@ -238,3 +238,33 @@ export interface Resume {
   /** Last updated timestamp */
   lastUpdated: string;
 }
+
+/**
+ * Represents the about page content and information
+ */
+export interface AboutPage {
+  /** Personal bio content */
+  bio: string;
+  /** URL to professional photo */
+  photoUrl: string;
+  /** Professional title/tagline */
+  tagline: string;
+  /** Optional additional content sections */
+  additionalSections?: AboutSection[];
+  /** Last updated timestamp */
+  lastUpdated: string;
+}
+
+/**
+ * Represents an additional content section on the about page
+ */
+export interface AboutSection {
+  /** Unique identifier for the section */
+  id: string;
+  /** Section title */
+  title: string;
+  /** Section content */
+  content: string;
+  /** Display order */
+  order: number;
+}

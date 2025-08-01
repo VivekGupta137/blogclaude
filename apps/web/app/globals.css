@@ -67,3 +67,49 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Syntax highlighting styles */
+.hljs {
+  @apply bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-4 rounded-lg overflow-x-auto;
+}
+
+.hljs-comment,
+.hljs-quote {
+  @apply text-gray-500 dark:text-gray-400 italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type {
+  @apply text-blue-600 dark:text-blue-400 font-semibold;
+}
+
+.hljs-string,
+.hljs-doctag {
+  @apply text-green-600 dark:text-green-400;
+}
+
+.hljs-title,
+.hljs-section {
+  @apply text-purple-600 dark:text-purple-400 font-semibold;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  @apply text-red-600 dark:text-red-400;
+}
+
+.hljs-function,
+.hljs-class {
+  @apply text-blue-700 dark:text-blue-300;
+}
+
+.hljs-number,
+.hljs-literal {
+  @apply text-orange-600 dark:text-orange-400;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  @apply text-cyan-600 dark:text-cyan-400;
+}

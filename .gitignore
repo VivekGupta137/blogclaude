@@ -3,3 +3,6 @@ apps/web/.next
 .claude
 .bmad-core
 node_modules
+
+# Environment files with sensitive data
+.env.mcp
